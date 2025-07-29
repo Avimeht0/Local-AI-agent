@@ -19,6 +19,8 @@ if add_documents:
             id=str(i))
         ids.append(str(i))
         documents.append(document)
+
+
 vector_store = Chroma(
     collection_name="restaurant_reviews",
     persist_directory=db_location,
